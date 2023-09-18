@@ -1,0 +1,25 @@
+AddDefaultCharset utf-8
+ErrorDocument 404 /404.php
+# Время жизни сессии в секундах
+php_value session.gc_maxlifetime 3600
+# Время жизни куки в секундах
+php_value session.cookie_lifetime 3600
+
+
+php_value default_socket_timeout 6000
+php_value max_execution_time 6000
+
+
+
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^www\.optilog\.tk
+#RewriteRule ^(.*)$ http://optilog.tk$1 [R=permanent,L]
+
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+

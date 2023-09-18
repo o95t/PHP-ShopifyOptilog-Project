@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  background-color:#fff;
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+
+
+.form-login {
+    background-color: #EDEDED;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+.pagination li.active a {
+    background: #ccc;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+
+.order_in, .order_out, .order_sku{
+    margin:0 auto;
+    border:1px solid grey;
+    width:400px;
+    background-color:white;
+    padding:10px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top:200px;
+    margin-left: auto;
+    margin-right: auto;  
+    z-index:200;
+    height:auto;
+    overflow: auto;
+}
+.aramex_left_form_in{
+    float:left;
+    padding: 20px 40px;
+    width:220px;
+        
+}
+.order_in{
+     width:585px;
+     height:auto;
+     margin:0 auto;
+}
+.order_out{
+    height:auto;
+    top:100px;
+}
+
+.green_table{
+    border:1px solid green; width:100%;
+    margin-bottom:20px;
+}
+.order_in_background, .order_out_background , .order_sku_background, .order_settings_background, .order_so_background{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    z-index:100;
+}
+.aramex_left_form{
+    float:left;
+    width:50%;
+}
+.aramex_right_form{
+    float:right;
+    width:50%;
+}
+
+
+.order_in .field, .order_out .field, .order_out .field{
+    padding-bottom:8px;
+}
+.aramex_bottom_fields{
+    padding-top:20px;
+}
+.aramex_title{
+    border:1px solid #ccc;
+    padding:5px;
+    background: #ccc; 
+    margin-bottom:20px;
+    padding-left:10px;
+}
+
+.aramex_top_fields{
+   border: 1px solid black;
+   padding:10px;
+   font-weight:bold;
+}
+.aramex_top_fields .red{
+    color:red;
+    padding-left:2px;
+}
+
+.aramex_bottom_fields table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.aramex_bottom_fields table tr td{
+    width:33,3%;
+    padding: 5px; 
+    border: 1px solid black;
+}
+.aramex_bottom_fields table th { 
+    text-align: left; 
+    background: #ccc; 
+    padding: 5px; 
+    border: 1px solid black;
+ }
+ 
+ #button_orderin,  #button_orderout,  #button_ordersku{
+     margin-top: 20px;
+     float:left;
+     
+ }
+  #button_cancel{
+     margin-top: 20px;
+     float:right;
+ }
+ div#aramex_preloader { 
+   position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible;
+    background:  url('/img/preloader.gif') no-repeat center center;
+    background-color: rgba(255, 255, 255, 0.3); 
+    z-index:99999;
+}
+.order_sku_background .order_sku{
+    width:600px;
+    margin:0 auto;
+}
+.aramex_error_message{ border:1px solid red; padding:3px; color:red; }
+.aramex_success_message{ border:1px solid green; padding:3px; color:green; }
+.table tr td button, .table tr td span{margin:5px;}
+.order_so{width: 740px; top:100px;}
+.aramex_left_form_so{
+    width:340px;
+}
+.aramex_right_form_so{
+    width:340px;
+    float:right;
+}
+.aramex_left_form_so input, .aramex_left_form_so textarea{
+    width:100%;
+}
+.aramex_right_form_so input, .aramex_right_form_so textarea {
+    width:100%;
+}
+.aramex_right_form_so textarea {
+   height: 85px
+}
+.table td:first-child { width: 20px; }
+.order_out_settings{
+    width:700px;
+}
+.order_out_left{
+    width:300px;
+    float:left;
+}
+.order_out_right{
+    width:300px;
+    float:right;
+}
